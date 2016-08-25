@@ -4,6 +4,11 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import com.alibaba.fastjson.JSON;
+import com.me.core.ApplicationConstants;
+import com.me.core.RedisClientWrapper;
+import com.me.model.SessionModel;
+import com.me.utils.CookieUtils;
+
 import ${package}.core.ApplicationConstants;
 import ${package}.core.RedisClientWrapper;
 import ${package}.model.SessionModel;
@@ -32,6 +37,13 @@ public class SessionContextManager {
 		}
 
 		return null;
+	}
+	
+	public void updateSessionModel(SessionModel sessionModel){
+		String cookieValue = CookieUtils.getCookieValue(((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest(), ApplicationConstants.OAUHT_COOKIE_NAME);
+
+		RedisClientWrapper.createInstance().set(ApplicationConstants.OAUHT_COOKIE_NAME + cookieValue, sessionModel,
+				ApplicationConstants.XONE_COOKIE_AGE);
 	}
 	
 	public SessionModel getSessionModel(){
