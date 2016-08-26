@@ -24,6 +24,7 @@
 * mvn archetype:generate   -DarchetypeGroupId=cn.fly.ad  -DarchetypeArtifactId=springboot-archetype -DarchetypeVersion=0.1    -DgroupId=com.me      -DartifactId=test  -Dversion=2.0
 
 ### JVM 一般性配置
+* -server -Xms1400M -Xmx1400M -Xss512k -XX:+AggressiveOpts -XX:+UseBiasedLocking -XX:PermSize=128M -XX:MaxPermSize=256M -XX:+DisableExplicitGC -XX:MaxTenuringThreshold=31 -XX:+UseConcMarkSweepGC -XX:+UseParNewGC  -XX:+CMSParallelRemarkEnabled -XX:+UseCMSCompactAtFullCollection -XX:LargePageSizeInBytes=128m  -XX:+UseFastAccessorMethods -XX:+UseCMSInitiatingOccupancyOnly -Djava.awt.headless=true
 
 ### maven仓库
 * 建立github的lib库
