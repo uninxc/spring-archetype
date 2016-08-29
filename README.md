@@ -1,5 +1,5 @@
 
-##Spring Boot archetype
+##Spring Boot Web archetype
 -------------------
 * Spring Boot
 * jfaster mango (http://mango.jfaster.org/)
