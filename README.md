@@ -21,7 +21,7 @@
 
 ### 使用规则
 * mvn install
-* mvn archetype:generate   -DarchetypeGroupId=cn.fly.ad  -DarchetypeArtifactId=springboot-archetype -DarchetypeVersion=0.1    -DgroupId=com.me      -DartifactId=test  -Dversion=2.0
+* mvn archetype:generate   -DarchetypeGroupId=com.github.uninxc  -DarchetypeArtifactId=springboot-archetype -DarchetypeVersion=0.1    -DgroupId=com.me      -DartifactId=test  -Dversion=2.0
 
 ### JVM 一般性配置
 
