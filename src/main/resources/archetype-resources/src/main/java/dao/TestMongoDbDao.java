@@ -1,7 +1,7 @@
 package ${package}.dao;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.me.model.Test;
+import ${package}.model.Test;
 
 import java.util.List;
 
