@@ -2,7 +2,6 @@ package ${package}.model;
 
 import org.springframework.data.annotation.Id;
 
-import com.me.model.Test;
 
 import lombok.Data;
 @Data
