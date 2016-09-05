@@ -4,10 +4,7 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import com.alibaba.fastjson.JSON;
-import com.me.core.ApplicationConstants;
-import com.me.core.RedisClientWrapper;
-import com.me.model.SessionModel;
-import com.me.utils.CookieUtils;
+
 
 import ${package}.core.ApplicationConstants;
 import ${package}.core.RedisClientWrapper;
