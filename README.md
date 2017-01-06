@@ -20,6 +20,8 @@
 * 演示session解决方案
 
 ### 使用规则
+* git clone https://github.com/uninxc/spring-archetype.git
+* cd spring-archetype
 * mvn install
 * mvn archetype:generate   -DarchetypeGroupId=com.github.uninxc  -DarchetypeArtifactId=springboot-archetype -DarchetypeVersion=0.1    -DgroupId=com.me      -DartifactId=test  -Dversion=2.0 -Dpackage=com.xx.xx
 
